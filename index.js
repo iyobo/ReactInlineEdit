@@ -59,7 +59,7 @@ var InlineEdit = function (_React$Component) {
         }, _this.cancelEditing = function () {
             _this.setState({ editing: false, text: _this.props.text });
         }, _this.commitEditing = function () {
-            _this.setState({ editing: false, text: _this.state.text });
+            _this.setState({ editing: false, text: _this.props.text });
             var newProp = {};
             newProp[_this.props.paramName] = _this.state.text;
             _this.props.change(newProp);

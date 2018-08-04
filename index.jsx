@@ -112,7 +112,7 @@ export default class InlineEdit extends React.Component {
     };
 
     keyDown = (event) => {
-        if (event.keyCode === 13) {
+        if (event.keyCode === 13 && !event.shiftKey) {
             this.finishEditing();
         } else if (event.keyCode === 27) {
             this.cancelEditing();
